@@ -1,0 +1,9 @@
+FROM eclipse-temurin:21-jre
+
+WORKDIR /app
+
+COPY target/heart-risk.jar app.jar
+
+EXPOSE 7071
+
+CMD ["sh", "-c", "java -jar app.jar"]

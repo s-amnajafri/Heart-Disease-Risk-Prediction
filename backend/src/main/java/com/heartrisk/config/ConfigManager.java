@@ -18,7 +18,9 @@ public final class ConfigManager {
     private static final String PRIMARY_DATASET = "../data/heart.csv";
     private static final String FALLBACK_DATASET = "data/heart.csv";
 
-    private final int port = 7071;
+    private final int port = Integer.parseInt(
+        System.getenv().getOrDefault("PORT", "7071")
+);
     private final double learningRate = 0.1;
     private final int epochs = 2000;
     private final long splitSeed = 42L;
