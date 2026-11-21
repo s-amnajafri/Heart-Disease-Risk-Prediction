@@ -1,0 +1,20 @@
+# Python virtual environment
+heart-risk-system/frontend/.venv/
+__pycache__/
+*.py[cod]
+
+# Java build files
+/backend/target/
+
+# Patient records
+data/patients.csv
+data/assessments.csv
+
+# Secrets
+.env
+.env.*
+heart-risk-system/frontend/.streamlit/secrets.toml
+
+# IDE files
+.idea/
+.vscode/
